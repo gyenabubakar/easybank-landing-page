@@ -4,7 +4,7 @@
   "description": "Landing page for Easybank, a fictional e-banking company.",
   "main": "index.js",
   "scripts": {
-    "deploy": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
