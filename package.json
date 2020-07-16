@@ -1,0 +1,22 @@
+{
+  "name": "easybank-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for Easybank, a fictional e-banking company.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyenabubakar/easybank-landing-page.git"
+  },
+  "author": "Gyen Abubakar (@gyenabubakar)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gyenabubakar/easybank-landing-page/issues"
+  },
+  "homepage": "https://gyenabubakar.github.io/easybank-landing-page",
+  "dependencies": {
+    "typescript": "^3.9.6"
+  }
+}

@@ -1,0 +1,106 @@
+// color variables
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+
+$very-light-gray: hsl(0, 0%, 98%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$grayish-blue: hsl(233, 8%, 62%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  box-sizing: border-box !important;
+  transition: all 0.3s ease;
+}
+
+::selection {
+  background-color: lighten($color: $lime-green, $amount: 35);
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+// =======================================
+//           FONTS TO BE USED           //
+// =======================================
+@font-face {
+  src: url(../lib/PublicSans/PublicSans-Light.ttf) format("truetype");
+  font-family: "PublicSans Light";
+  font-weight: 300;
+}
+@font-face {
+  src: url(../lib/PublicSans/PublicSans-Regular.ttf) format("truetype");
+  font-family: "PublicSans Regular";
+  font-weight: 400;
+}
+@font-face {
+  src: url(../lib/PublicSans/PublicSans-Bold.ttf) format("truetype");
+  font-family: "PublicSans Bold";
+  font-weight: 700;
+}
+
+// =======================================
+//  MIXIN - SHORTCUT FOR MEDIA QUERIES  //
+// =======================================
+@mixin media($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+// font helper classes
+.light {
+  font-family: "PublicSans Light", sans-serif;
+}
+.regular {
+  font-family: "PublicSans Regular", sans-serif;
+}
+.bold {
+  font-family: "PublicSans Bold", sans-serif;
+}
+
+// =======================================
+//               CONTAINER              //
+// =======================================
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// small tablets
+@include media(768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+// small laptops and big tablets
+@include media(992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+// large desktops
+@include media(1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+// mixin for section paragraphs
+@mixin section-p {
+  text-align: center;
+  width: 90%;
+  color: grey;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+// mixin for section H1
+@mixin section-h1 ($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $dark-blue;
+}
